@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="Stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="CONTACT.CSS">
+    <Script src="INDEX.JS"></Script>
+    <link rel="icon" href="aotranglongcuu.jpg" alt="image1">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+</head>
+<header class="header" id="header">
+    <nav class="nav container">
+      <a href="Thao's Home.html" class="nav__logo">Thao</a>
+  
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="Thao's Home.html" class="nav__link">Trang chủ</a>
+          </li>
+  
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">Về tôi</a>
+          </li>  
+          <li class="nav__item">
+            <a href="contact.html" class="button">Liên hệ</a>
+          </li>
+        </ul>
+  
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+  
+      <div class="nav__actions">
+  
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-apps-2-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+<body>
+    <CENTER> <h1>LIÊN HỆ</h1></CENTER><br>
+    <center> <div class="form">
+               <div class="box1"><br>
+                  <h2>Thông tin</h2><br>
+                   <div class="contact-info">
+                     <div class="address">
+                        <h3>Số điện thoại</h3>
+                        <p>0898673203</p><br>
+                        <h3>Địa chỉ</h3>
+                        <p> 12 Nguyễn Văn Bảo, Phường 4, quận Gò Vấp,Thành phố Hồ Chí Minh</p><br>
+                        <h3>Email</h3>
+                        <p>lthaosd2k3@gmail.com</p>        
+                     </div>
+                   </div>
+                </div>
+                <div class="box2">
+                  <div  class="lienhe">
+                    <CENTER><h2>Gửi tin nhắn</h2></CENTER>
+                      <form id="contact-form">
+                        <div class="form-group">
+                          <label for="name">Họ tên:</label>
+                            <input type="text" id="name" name="name" required placeholder="Tên của bạn">
+                        </div>
+        
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" required placeholder="Email của bạn">
+                        </div>
+                  
+                        <div class="form-group">
+                          <label for="message">Nội dung:</label>
+                          <textarea id="message" name="message" required ></textarea >
+                        </div>             
+                        <input type="submit" value="Gửi" class="btn-submit">         
+                        </div> 
+                      </form> <br>
+                  <div id="response"></div>
+                </div>      
+                <div class="box3">
+                  <div class="map">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.862665066178!2d106.68492451534025!3d10.822205292296329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e5496d03cf%3A0xa5b8e7395ec636b9!2s12%20Nguy%E1%BB%85n%20V%C4%83n%20B%E1%BA%A3o%2C%20Ph%C6%B0%E1%BB%9Dng%204%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vi%E1%BB%87t%20Nam!5e0!3m2!1sen!2sus!4v1647512345678!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                </div>            
+          </div></center>
+</body>
+</html>

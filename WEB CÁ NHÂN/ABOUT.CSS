@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    padding-top: 100px;
+}
+.thôngtin {
+    display: flex;
+    flex-direction: row; 
+    align-items: stretch; 
+}
+
+.laai, .video, .uudiem {
+    flex: 1; 
+    padding: 20px;
+    
+}
+
+.laai h2 {
+    text-align: center; 
+}
+
+.video iframe {
+    width: 100%; 
+}
+
+.uudiem ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.uudiem li {
+    margin-bottom: 10px; 
+}
+
+
+.hinhanh img {
+    width: 200px;
+    height: auto; 
+    margin: 10px; 
+}
+.hinhanh {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
+    transition: transform 0.3s;
+}
+    
+    .hinhanh:hover {
+    
+    transform: scale(1.1); /* Phóng to hình ảnh khi rê chuột vào */
+    
+    }

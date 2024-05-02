@@ -1,0 +1,79 @@
+.form{
+    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:40px 40px 40px;
+    grid-gap: 40px;
+    border: 10px ;
+    padding: 30px;
+    border-radius: 1px;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+   }
+   h1{
+    padding-top: 80px;
+   }
+   
+  h1,h2{
+    font-family:serif;
+    
+  }
+ 
+  .box1 h2{
+    text-align: left;
+
+  }
+
+  .lienhe {
+    background-image:  linear-gradient(to right, rgb(150, 202, 242), rgb(235, 136, 230));
+    margin: 0 auto;
+    padding: 10px;
+    font-family: serif;
+    text-align: left;
+    border-radius: 15px;
+  }
+  
+  .contact-info {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-family: serif;
+  }
+
+  .contact-info > div {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+
+ 
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+ 
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+   
+   border: 2px solid #ccc; /* Viền dày 2px, màu xám */
+
+  }
+
+  .btn-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #150d6a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
