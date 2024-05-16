@@ -81,6 +81,24 @@
                         </div> 
                       </form> <br>
                   <div id="response"></div>
+                    <Script>
+                            document.getElementById("contact-form").addEventListener('submit', function(event) {
+                            event.preventDefault(); // Ngăn form submit mặc định   
+                            // Lấy giá trị từ input và textarea  
+                            let name = document.getElementById("name").value;  
+                            let email = document.getElementById("email").value;   
+                            let message = document.getElementById("message").value;   
+                            // Kiểm tra nếu tất cả các trường đều đã được điền  
+                            if(name.trim() === '' || email.trim() === '' || message.trim() === '') {   
+                            alert("Vui lòng điền đầy đủ thông tin!");   
+                            } else {   
+                            // Hiển thị thông báo gửi tin nhắn thành công trên màn hình window 
+                            alert("Tin nhắn của bạn đã được gửi thành công!"); 
+                            // Reset form sau khi gửi thành công  
+                            document.getElementById("contact-form").reset();   
+                            }   
+                            });
+                    </Script>
                 </div>      
                 <div class="box3">
                   <div class="map">
