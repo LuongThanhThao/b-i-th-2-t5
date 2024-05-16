@@ -96,6 +96,29 @@
             <lable>Gửi thông tin </lable>
             <button>Ấn vào để gửi</button>
           </form>
+                <Script>
+                    document.querySelectorAll('button').forEach(button => {
+                        button.addEventListener('click', function() {         
+                        let form = this.parentElement;        
+                        let inputs = form.querySelectorAll('input, select');             
+                        let isValid = true; 
+                        inputs.forEach(input => {                       
+                        if (input.value.trim() === '') {                       
+                        isValid = false; 
+                        input.style.border = '1px solid red'; // Đổi màu viền input khi không hợp lệ 
+                        } else {                       
+                        input.style.border = ''; // Đặt lại viền input khi hợp lệ                     
+                        }                        
+                        });  
+                        if (isValid) {              
+                        alert("Thông tin của bạn đã được gửi thành công!");                        
+                        form.reset();                        
+                        } else {
+                        alert("Vui lòng điền đầy đủ thông tin!");
+                        }                  
+                        });               
+                        });
+                </Script>
         </div>
         <div class="thank">
           <img src="thankk.png" alt="">
